@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: rgb(175, 144, 135);
+    padding: 1em;
+    text-align: center;
+}
+
+article {
+    background-color: #f1f1f1;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 0 0 1em rgba(255, 255, 255, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+article:hover {
+    box-shadow: 0 0 2em rgba(255, 255, 255, 0.6);
+}
+
+main {
+    background-color: rgb(32, 53, 61);
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2em;
+}
+
+@media (min-width: 600px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
